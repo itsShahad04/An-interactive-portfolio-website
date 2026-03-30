@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Shahad's Portfolio</title>
+    <style>
+        body {
+            background-color: #F5F5DC;
+            color: #3e445b;
+            margin: 0;
+            font-family: Verdana, sans-serif;
+        }
+        .page-wrapper {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        header, footer {
+            background-color: #3e445b;
+            color: #F5F5DC;
+            text-align: center;
+            padding: 40px 0;
+        }
+        nav a {
+            color: #F5F5DC;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        main {
+            padding: 60px 20px;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .section-title {
+            font-family: Georgia, serif;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        hr {
+            border: 0;
+            height: 3px;
+            background-color: #3e445b;
+            width: 60px;
+            margin-left: 0;
+            margin-bottom: 20px;
+        }
+        .form-container {
+            background-color: #FDF5E6;
+            border: 2px solid #3e445b;
+            border-radius: 15px;
+            padding: 40px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="button"] {
+            background-color: #3e445b;
+            color: #F5F5DC;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        a {
+            color: #3e445b;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="container">
+                <h1 style="font-family: Georgia; font-size: 48px; margin: 0;">Shahad Alalwani</h1>
+                <p>An Interactive Portfolio Website</p>
+                <nav>
+                    <a href="index.html">HOME</a> |
+                    <a href="info.html">INFO</a> |
+                    <a href="projects.html">PROJECTS</a> |
+                    <a href="contact.html"><u>CONTACT</u></a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <h2 style="text-align: center; font-family: Georgia; font-size: 48px;">Get In Touch</h2>
+            
+            <div class="contact-grid">
+                <div>
+                    <div class="section-title">Contact Details</div>
+                    <hr>
+                    <p><b>Name:</b> Shahad Ahmed Alalwani</p>
+                    <p><b>Email:</b> <a href="mailto:Y4F4441500444@RCJY.EDU.SA"><b>Y4F4441500444@RCJY.EDU.SA</b></a></p>
+                    <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/shahad-alalwani-3b76553a2" target="_blank"><b>Shahad Alalwani</b></a></p>
+                </div>
+
+                <div class="form-container">
+                    <div class="section-title" style="font-size: 24px;">Send a Message</div>
+                    <form>
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name">
+
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6"></textarea>
+
+                        <input type="button" value="Submit Message">
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                &copy; 2026 All rights reserved — Shahad Alalwani
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

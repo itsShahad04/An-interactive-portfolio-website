@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shahad's Portfolio</title>
+    <style>
+        body {
+            background-color: #F5F5DC;
+            color: #3e445b;
+            margin: 0;
+            font-family: Verdana, sans-serif;
+        }
+
+        /* MASTER GRID SETUP */
+        .page-wrapper {
+            display: grid;
+            grid-template-rows: auto 1fr auto; /* Header, Body, Footer */
+            min-height: 100vh;
+        }
+
+        /* Centered Container (Replaces 1100px table) */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        header, footer {
+            background-color: #3e445b;
+            color: #F5F5DC;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        nav a {
+            color: #F5F5DC;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 60px 20px;
+        }
+
+        /* The Hero Section (Bio + Photo) */
+        .hero-section {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr; /* 60% text, 40% image */
+            gap: 40px;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 300px;
+            border: 10px solid #3e445b;
+            border-radius: 20px;
+        }
+
+        .quote {
+            text-align: center;
+            font-family: Georgia, serif;
+            font-size: 24px;
+            margin-top: 60px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-wrapper">
+    <header>
+        <div class="container">
+            <h1 style="font-family: Georgia; font-size: 48px; margin: 0;">Shahad Alalwani</h1>
+            <p>An Interactive Portfolio Website</p>
+            <nav>
+                <a href="index.html">HOME</a> |
+                <a href="info.html">INFO</a> |
+                <a href="projects.html">PROJECTS</a> |
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 style="text-align: center; font-family: Georgia; font-size: 36px;">Welcome to my Digital Space!</h2>
+        
+        <div class="hero-section">
+            <div class="hero-text">
+                <h3 style="font-family: Georgia; font-size: 30px;">Hello, I'm Shahad.</h3>
+                <p style="font-size: 18px; line-height: 1.6;">
+                    I am a Computer Science student at YIC dedicated to building accessible and user-centric web solutions. My work focuses on combining technical rigor with clean design to solve complex academic and professional challenges.
+                </p>
+            </div>
+            <div class="hero-image">
+                <img src="photo 441500444.jpg" alt="Shahad Alalwani">
+            </div>
+        </div>
+
+        <div class="quote">
+            "To understand the world at all, sometimes you could only focus on a tiny bit of it, look very hard at what was close to hand and make it stand in for the whole"
+            <p style="font-size: 18px; font-style: normal;">— Donna Tartt</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2026 All rights reserved — Shahad Alalwani
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
+
+
+             
+
+           
